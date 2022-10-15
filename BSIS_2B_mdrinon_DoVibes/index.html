@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="others/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>First Webpage</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">DoVibes</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="records.html">Records</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner">
+    <section>
+      <div class="form-container">
+          <h2>Log in</h2><br>
+              <form action="home.html">
+                <div class="control">
+                  <input type="text" id="username" name="username">
+                  <label for="username">Username:</label>
+                </div>
+                <div class="control">
+                  <input type="password" id="pwd" name="pwd">
+                  <label for="pwd">Password:</label>
+                </div>
+                <span><input type="checkbox"> Remember me.</span>
+                <div class="control">
+                  <a href="home.html"><button>Log in</button></a>
+                </div>
+              </form>
+                <div class="link">
+                  <a href="#">Forgot Password</a>
+                      <br><small>or</small><br>
+                  <a href="#">Sign Up</a>
+                </div>
+      </div>     
+    </section>
+  </div>
+  <div class="about">
+    <div class="content">
+      <div class="title">SPOIL YOURSELF TODAY</div>
+
+<!---List of products--->
+        <div>
+          <p>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br><br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>            
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br><br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+            description.description.description.description.description.description.description.description.description.<br>
+          </p><br><br>
+        </div>
+<!---end--->      
+    </div>
+  </div>
+  <div>
+    <center><hr>
+      <p><small><b>Privacy Policy</b> | <b>Cookies Policy</b></small></p>
+      <p><small>All Rights Reserved</small></p>
+    </center>
+  </div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
