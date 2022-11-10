@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css for main content */
+.main-content{
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+.btn-info{
+    background-color: #ff7f50;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-info:hover{
+    background-color: #ff6348;
+    color: black;
+}
+
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #3742fa;
+    color: black;
+}
+
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #2ed573;
+    color: black;
+}
+
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757;
+    color: black;
+}
+
+.btn-warning{
+    background-color: #eccc68;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: #eccc68;
+}
+.btn-warning:hover{
+    background-color: #ffa502;
+    color: black;
+}
+
+.btn{
+    border-radius: 0%;
+    width: 90px;
+    text-align: center;
+    color: aliceblue;
+}
