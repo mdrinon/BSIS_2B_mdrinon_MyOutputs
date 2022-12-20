@@ -1,0 +1,417 @@
+*{
+    margin: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+.text-white:hover{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+.error{
+    text-align: center;
+    color: #2d3436;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+}
+fieldset{
+    border: 1px solid black;
+    background-color: #e2e7ed;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+.navbar{
+    margin: 0 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 150;
+}
+.logo{
+    width: 10%;
+    margin-top: 0px;
+    float: left;
+}
+.menu{
+    line-height: 40px;
+    margin-right: 10%;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/*#sign-in {
+    text-align: center;
+    width: 7rem;
+    padding: 0%;
+    display:inline;
+    background-color: #ff9a02;
+    position:absolute;
+    z-index: 10;          
+    top: 2.5%;
+    right: 10px;
+    line-height: 35px;
+}    
+#sign-in:hover{
+    background-color: orangered;
+}*/
+
+
+
+.dropdown {
+    text-align: center;
+    display: inline-flex;
+    line-height: 35px;
+    float: right;
+    margin-top: 0;
+    }
+
+.dropbtn {
+    background-color: #ff9a02;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    border: none;
+    min-width: 120px;
+    margin-top: -40%;
+    position: sticky;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: orangered;}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url("../images/food-search-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 9% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 8% 4% 8%;
+}
+
+.box-3:hover .category-img:hover .category-name:hover{
+    transition: all 0.3s;
+}
+
+.box-3{
+    width: 23%;
+    float: left;
+    margin: 1%;
+}
+
+.box-3:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);    
+}
+
+.category-img:hover {
+    box-shadow: 3px 3px 8px 8px #ced6e0;
+}
+
+.categories h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.categories h3:hover{
+    opacity: 1;
+    color: #f1f2f6;
+    text-shadow: 3px 3px #2f3542;
+    transition-delay: .1s;
+}
+
+
+/* CSS for Food Menu */
+.categories{
+    color: #ff4757;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+	font-size: 100px;
+    text-shadow: 2px 2px #747d8c;
+    margin-bottom: 25px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.food-menu{
+    background: #f1f2f6;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 44%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-name{
+    text-transform: capitalize;
+}
+
+.food-menu-img{
+    width: 35%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 59%;
+    float: left;
+    margin-left: 3%;
+}
+
+.food-price{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: .8rem;
+    color: #747d8c;
+}
+.cart-btn{
+    padding: 1.5%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0px;
+}
+.fab-icon{
+    height: 1.1rem; 
+    margin-bottom: -3.5px;
+}
+
+
+/* for Order Section */
+h2.text-center{
+    color: #ff4500;
+}
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+.food-ordering{
+    background-image: url('../images/bg-order-page.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 9% 0;
+}
+
+legend{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.footer{
+    border-top: 1px solid rgb(48, 47, 47);
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    #sign-in{
+        position: initial;
+        display: inline-flex;
+        text-align: right;
+        line-height: 20px;
+        width: 3.5rem;
+        padding: 1%;        
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        margin: 3% 2% 2% 2%;
+        display: inline;
+        width: 42%;
+
+    }
+    .title{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: auto;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 3%;
+        margin: 2% 2.5% 0% 2.5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
